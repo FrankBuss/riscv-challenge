@@ -1,12 +1,12 @@
 # MIDI synthesizer
 
-This is the MIDI synthesizer project for the RISC-V Design Challenge. See [here](https://www.hackster.io/contests/hackitriscv) for details. I'm using [this board](https://lcsc.com/product-detail/Development-Boards-Kits_WCH-Jiangsu-Qin-Heng-CH32V307V-EVT-R1_C2943980.html) for it.
+This is the MIDI synthesizer project for the [RISC-V Design Challenge](https://www.hackster.io/contests/hackitriscv). I'm using [this board](https://lcsc.com/product-detail/Development-Boards-Kits_WCH-Jiangsu-Qin-Heng-CH32V307V-EVT-R1_C2943980.html) for it.
 
 The board is configured to receive the MIDI data with an opto-isolator with the standard MIDI frequency of 31,250 Hz. The firmware then detects note-on and note-off events and generates a PWM signal with the requested pitch.
 
 Soldering the MIDI-in board and testing the project:
 
-my youtube
+https://www.youtube.com/watch?v=y-bby_u5XV8
 
 ## Software
 
@@ -36,7 +36,7 @@ Parts list, which you can get from https://www.digikey.com:
 
 When soldering it, you can use (this interactive placement tool)[midi-in-module/bom/ibom.html] to find the location of the components.
 
-You can connect the PWM output directly to a high impedance amplifier, or you can build a simple amplifier with a MOSFET to drive a speaker, as seen in the video:
+You can connect the PWM output directly to a high impedance amplifier, or you can build a simple amplifier with a N-channel MOSFET to drive a speaker, as seen in the video:
 
 ![speaker](speaker.png)
 
